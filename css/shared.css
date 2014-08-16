@@ -1,0 +1,342 @@
+/*СТАНДАРТ*/
+.wrapper {
+	/*background-color: #eee;*/
+	/*background-color: #f8f8f8;*/
+/*	width: 1500px;*/
+	font-family: "Myriad Pro";
+}
+
+.container {
+	width: 1200px;
+	/*width: 100%;*/
+	text-align: center;
+	padding:0; /*нейтрализация буутстрапа*/
+}
+
+.column	{
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.row {
+	margin: 0 0;
+}
+
+
+/* типа особо не нужный СТАНДАРТ*/
+.row:after, .clearfix:after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.column:last-child {margin-right: 0;}
+.column:first-child {margin-left: 0;}
+
+.third {width: 33.3%;
+float: left;
+}
+
+.fourth {width: 25%;}
+
+.half {width: 50%;}
+
+.pull-left {display: inline-block; float: left;}
+
+.pull-right {display: inline-block; float: right;}
+/*конец СТАНДАРТОВ*/
+
+/* === ШРИФТЫ ===================================== */ 
+/*@font-face {
+    font-family: 'shlapak_scriptregular';
+    src: url('../fonts/shlapak_script-webfont.eot');
+    src: url('../fonts/shlapak_script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/shlapak_script-webfont.woff') format('woff'),
+         url('../fonts/shlapak_script-webfont.ttf') format('truetype'),
+         url('../fonts/shlapak_script-webfont.svg#shlapak_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/open_sans-webfont.eot');
+    src: url('../fonts/open_sans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open_sans-webfont.woff') format('woff'),
+         url('../fonts/open_sans-webfont.ttf') format('truetype'),
+         url('../fonts/open_sans-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sans_narrow';
+    src: url('../fonts/PT-Sans-Narrow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+}*/
+
+@font-face {
+    font-family: 'shlapak_scriptregular';
+    src: url('../fonts/bpmh7gx6-webfont.eot');
+    src: url('../fonts/bpmh7gx6-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bpmh7gx6-webfont.woff') format('woff'),
+         url('../fonts/bpmh7gx6-webfont.ttf') format('truetype'),
+         url('../fonts/bpmh7gx6-webfont.svg#shlapak_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* ===================================== END === */ 
+
+
+/* === HEADER ===================================== */ 
+
+.navigation {
+	background-color: #0f1521;
+	height: 109px;
+	width: 100%;
+	border-top: 5px solid #1aa156;
+}
+
+.navigation:after {
+	content: "";
+	display: inline-block;
+	margin-top: 28px;
+	height: 10px;
+	background-image:
+	-webkit-linear-gradient(left top, #1aa156 49.9%, transparent 2%),
+	-webkit-linear-gradient(right top, #1aa156 49.9%, transparent 5%);
+	-webkit-background-size: 10px 10px; 
+	background-size: 10px 10px;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+
+nav {
+	position: relative;
+}
+
+header .logo:after {
+	content: "";
+	background-image: url('../images/home/small_triangle.png');
+	position: absolute;
+	z-index: 2;
+	top: 76px;
+	left: 50%;
+	margin-left: -136px;
+	height: 50px;
+	width: 300px;
+	background-repeat: no-repeat;
+}
+
+.wrapper a:hover {
+	color: #fff;
+	background-color: #1aa156;
+	text-decoration: none;
+}
+
+.controls a:hover{
+	height: 20px;
+}
+
+.wrapper .logo:hover {
+	background-color: #0f1521;
+}
+
+nav {
+	margin-top: 26px;
+}
+
+nav a {
+	/*font-family: 'PT Sans Narrow', sans-serif;*/
+	font-size: 16px;
+	color: #fff;
+	border: 1px solid  #1aa156;
+	padding: 13px 18px;
+	text-decoration: none;
+	float: left;
+	margin-right: 107px;
+}
+
+nav a:last-child {
+	margin-right: 0;
+}
+
+nav a:first-child {
+	margin-left: 30px;
+}
+
+.logo {
+	border: none;
+	padding: 0;
+}
+
+/*"sans_narrow"*/
+/* ===================================== END === */ 
+
+
+
+
+/* === FOOTER ===================================== */ 
+
+
+footer {
+		border-top: 5px solid #1aa156;
+}
+
+
+.footer-top {
+	background-color: #0f1521;
+	color: #1aa156;
+	padding: 105px 0 97px; 
+}
+
+.footer-top .logo{
+	margin-bottom: 15px;
+}
+
+.footer-top p {
+	font-size: 16px;
+	margin-top: 18px;
+}
+
+
+.twitters {
+	background-color: #1aa156;
+	color: #fff;
+	padding: 66px 0;
+}
+
+.twitters p{
+	width: 35%;
+	display: inline-block;
+	text-align: left;
+	margin: 0;
+	margin-top: -20px;
+}
+
+.footer-bottom {
+	color: #1aa156;
+	padding: 53px 0 20px; 
+	font-size: 0;
+}
+
+.footer-bottom p{
+	font-size: 14px;
+	margin-top: 47px;
+}
+
+.twitters span,
+.footer-bottom span {
+	font-family: "pictonic";
+	color: #1d7243;
+	font-size: 30px;
+	padding: 10px;
+	background-color: #1aa156;
+}
+
+/*.footer-bottom span:first-child {
+	background-color: #0f1521;
+	color: #fff;
+}
+
+.footer-bottom span:first-child:hover {
+	background-color: #1d7243;
+	color: #fff;
+}*/
+
+.twitters span {
+	color: #0f1521;
+	font-size: 40px;
+	padding-right: 28px;
+}
+
+.twitters:after {
+	content: "";
+	display: inline-block;
+	margin-top: 63px;
+	height: 10px;
+	background-image:
+	-webkit-linear-gradient(left top, #1aa156 49.9%, transparent 2%),
+	-webkit-linear-gradient(right top, #1aa156 49.9%, transparent 5%);
+	-webkit-background-size: 10px 10px; 
+	background-size: 10px 10px;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+
+
+
+.footer-bottom span:hover,
+.footer-bottom span:focus {
+	background-color: #0f1521;
+	color: #fff;
+}
+
+/* ===================================== END === */ 
+
+.bg-grey {
+	background-color: #f8f8f8;
+}
+
+.black-button {
+	background-color: #0F1521;
+	float: left;
+	padding: 29px;
+}
+
+.green-button {
+	background-color: #1aa156;
+	float: right;
+	padding: 37px 16px;
+	width: 98px;
+	height: 98px;
+	color: #fff;
+}
+
+.call-to-action {
+	background-color: #fff;
+	overflow: hidden;
+	font-size: 17px;
+}
+
+.call-to-action a:hover {
+	color: #0F1521;
+}
+
+.call-to-action_txt {
+	margin-top: 39px;
+	overflow: hidden;
+}
+
+.call-to-action_txt a{
+	color: #1aa156;
+	float: left;
+/*	margin: 0 30px;*/
+	margin: 0 100px 0 55px;
+}
+
+.call-to-action_txt a:hover{
+	color: #1aa156;
+	background-color: #fff;
+	text-shadow: 0px 3px 2px #B7A9A9;
+}
+
+.call-to-action .call-to-action_txt input[type="text"] {
+	width: 71%;
+	float: left;
+	border: none;
+	color: #000;
+	outline: none;
+	height: 23px;
+}
+
+.call-to-action .call-to-action_txt input::-webkit-input-placeholder { color: #0F1521; }
+.call-to-action .call-to-action_txt input:-moz-placeholder { color: #0F1521; }

@@ -1,0 +1,144 @@
+.main {
+	padding: 67px 0 40px;
+}
+
+.green-button {
+	padding-top: 29px;
+	line-height: 20px;
+}
+
+.menu {
+	margin-top: 52px;
+}
+
+.menu nav {
+	width: 23%;
+	background-color: #0F1521;
+	float: left;
+	margin-top: 0;	
+}
+
+.menu nav h4 {
+	background-color: #161f2f;
+	color: #fff;
+	margin: 0 0 52px 0;
+	height: 60px;
+	line-height: 60px;
+}
+
+.menu nav a {
+	border: none;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 15.7px;
+}
+
+.menu nav a:last-child {
+	margin-bottom: 48px;
+}
+
+table {
+	width: 77%;
+	background-color: #f1f1f1;
+}
+
+/*table tr:first-child*/
+.conditions{
+	height: 60px;
+	background-color: #fff;
+}
+
+.types-of-pizzas {
+	height: 98px;
+	border-bottom: 1px solid  #fff;
+}
+
+.wide {
+	width: 55%;
+	padding-left: 2%;
+	text-align: left;
+}
+
+.wide h4 {
+	margin-top: 15px;
+}
+
+.wide p {
+	color: #010101;
+	font-size: 14px;
+	width: 88%;
+	line-height: 17px;
+	margin-bottom: 18px;
+}
+
+td h4,
+.narrow p {
+	color: #1aa156;
+	font-size: 17.8px;
+}
+
+.narrow {
+	padding: 0 5.5% 0 1%;
+	position: relative;
+}
+
+.narrow p{
+	position: absolute;
+	transform: translateY(-50%);
+}
+
+.menu_button {
+	background-color: #0F1521;
+	min-width: 88px;
+	display: inline-block;
+	padding: 8px 9px;
+	color: #fff;
+	position: absolute;
+	transform: translateY(-46%);
+}
+
+/*.wrapper .menu_button:hover,
+.js-text:hover {
+	background-color: #0F1521;	
+}*/
+
+.menu_button.active {
+  background-color: #1aa156;
+}
+
+.js-text {
+  display: inline;
+}
+
+.js-text-hidden {
+  display: none;
+}
+
+.menu_button.active>.js-text {
+  display: none;
+}
+
+.menu_button.active>.js-text-hidden {
+  display: inline;
+}
+
+
+
+/*специяально для js*/
+.chose {
+	color: #FFF;
+	background-color: #1AA156;
+	text-decoration: none;
+}
+
+.menu_body {
+	display: none;
+}
+
+.opacity {
+	opacity: 0.9;
+}
+
+.default_cursor a{
+	cursor: default;
+}

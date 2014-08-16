@@ -1,0 +1,156 @@
+.bg-grey{
+	padding-bottom: 100px;
+}
+
+h2 {
+	background-color: #aeaeae;
+	text-align: center;
+	padding: 54px 0 29px;
+	margin: 5px 0 54px;
+	width: 100%;
+	color: #fff;
+	font-size: 26px;
+} 
+
+h2:after {
+	content: "";
+	display: inline-block;
+	margin-top: 57px;
+	height: 10px;
+	left: 0;
+	background-image:
+	-webkit-linear-gradient(left top, #aeaeae 49.9%, transparent 2%),
+	-webkit-linear-gradient(right top, #aeaeae 49.9%, transparent 5%);
+	-webkit-background-size: 10px 14px; 
+	background-size: 10px 14px;
+	width: 100%;
+	position: absolute;
+z-index: 1;
+}
+
+.call-to-action {
+	margin-bottom: 50px;
+}
+
+.black-button {
+	padding: 29px 34px;
+}
+
+#map_canvas {
+	height: 310px;
+}
+
+
+.contact-form {
+	overflow: hidden;
+	margin-top: 43px;
+}
+
+.form,
+.address,
+.contact {
+	background-color: #fff;
+	float: left;
+}
+
+.form {
+	width: 74.5%;
+	margin-right: 2.5%;
+	padding: 20px 2% 30px;
+}
+
+.address,
+.contact {
+	width: 23%;
+	padding: 33px 1.7% 11px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 21px;
+	float: left;
+	margin-bottom: 38px;
+}
+
+h4 {
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 17px;
+	margin-bottom: 17px;
+}
+
+h3,
+h4,
+.contact span {
+	color: #1aa156;
+}
+
+input {
+	width: 100%;
+	height: 51px;
+	margin-bottom: 2.4%;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	margin-bottom: 2%;
+}
+
+input:before {
+	font-family: ;
+}
+
+input:hover,
+textarea:hover {
+	border: 1px solid #1aa156;
+	outline: none;
+}
+
+input[type="submit"]{
+	width: 10%;
+	float: right;
+	background-color: #0f1521;
+	color: #fff;
+	border: none;
+}
+
+.address p,
+.contact p {
+	font-size: 12px;
+}
+
+.contact p {
+	line-height: 21px;
+}
+
+.inner-addon {
+    position: relative;
+}
+.inner-addon input {
+    padding-left: 36px;    
+}
+.inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+    left: 0;
+    top: auto;
+	bottom: 27px;
+	color: #1aa156;
+}
+
+
+
+.inner-addon-textarea textarea {
+    padding: 8px 0 0 36px;    
+}
+
+.inner-addon-textarea i {
+	position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+    left: 0;
+    top: 1px;
+	/*bottom: 27px;*/
+}

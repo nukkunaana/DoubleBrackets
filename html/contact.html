@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Double brackets | CONTACT</title>
+		
+	<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+	<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+
+	
+	<script src="../js/jquery-2.1.0.min.js"></script>
+	<link href="../js/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="../js/bootstrap.min.js"></script> 
+
+	<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCqMgbryxrbeQY1zH46XTNl9ZLrp2budOg&sensor=FALSE">
+    </script>
+	<script type="text/javascript" src="../js/map.js"></script>
+
+	
+<!--	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script> -->
+	<link rel="stylesheet" href="../css/mfglabs_iconset.css">
+	<link rel="stylesheet" href="../css/pictonic.css">
+
+	
+	<link rel="stylesheet" type="text/css" href="../css/shared.css">
+	<link rel="stylesheet" type="text/css" href="../css/contact.css">
+</head>
+<body>
+	
+	<!-- .wrapper>.container>(header>nav>a*5)+(main>.promo+(section.prefs>h2+.third)+(section.review>.bonus+.customers+.regulars)+(footer>section.footer-top+.twitters+.footer-bottom) -->
+
+
+	<div class="wrapper">
+		<header>
+			<div class="navigation">
+				<div class="container">
+					<div class="col-xs-12">
+						<nav>
+							<a href="index.html">Главная</a>
+							<a href="menu.html">Пиццы</a>
+							<a href="index.html" class="logo"><img src="../images/home/logo.png" alt="Logo"></a>
+							<a href="#">Акции</a>
+							<a href="contact.html">Контакты</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+
+
+		
+		<div class="main bg-grey">
+			<h2>Есть вопросы? Напиши нам!</h2>
+			<div class="container">
+				<div class="col-xs-12">
+					<div class="call-to-action">
+						<!-- <span></span> -->
+						<img class="black-button" src="../images/contact/icon_marker.png" alt="icon_pen">
+						<a class="green-button" href="#">Карта</a>
+						<div class="call-to-action_txt">
+							<a href="">GPS координаты</a>
+							<input type="text" placeholder="Используешь GPS? Введи свои координаты и мы сами найдем тебя!"></input>
+						</div>
+					</div>
+				
+					<div id="map_canvas"></div>
+
+					<!-- .contact-form>(.form>input)+(.address>h3+p)+(.contact>h3+p+p) -->
+					
+					<div class="contact-form">
+						<div class="form">
+							<h3>CONTACT FORM</h3>
+							<div class="inner-addon">
+								<i class="glyphicon glyphicon-user"></i>
+								<input type="text" placeholder="Имя">
+							</div>
+							<div class="inner-addon">
+								<i class="glyphicon glyphicon-envelope"></i>
+								<input type="text" placeholder="Электропочта">
+							</div>
+							<div class="inner-addon" >
+								<i class="glyphicon glyphicon-earphone"></i>
+								<input type="text" placeholder="Лэ телефоне">
+							</div>
+							
+							<div class="inner-addon inner-addon-textarea" >
+								<i class="glyphicon glyphicon-comment"></i>
+								<textarea name="" id="" cols="30" rows="10" placeholder="Масседж"></textarea>
+							</div>
+							
+							<input type="submit" value="Отправить" size="20">
+						</div>
+						<div class="address">
+							<h4>Мы легко находимся</h4>
+							<p>Санкт-Петербург, <br>
+								Миллионная, 4/1 (вход с аптекарского переулка) <br>
+								код на воротах 2488 <br>
+								приходите на чаек-кофеек и печеньки <br>
+							</p>
+						</div>
+						<div class="contact">
+							<h4>Контакты</h4>
+							<p>
+								<span>Тел: </span>+7 931 206 53 11 <br>
+								<span>Fax: </span>+7 931 206 53 11 <br>
+								<span>E-mail: </span>info@kapodastr.com <br>
+							</p>
+							<p>
+								задать вопрос <br>
+								заказать пиццу <br>
+								узнать как кодить <br>
+								чем отличается сыр от <br>
+								в чем смысл верстки <br>
+								как стать другом дизайнера <br>
+								почему я люблю пиццу с сыром <br>
+								как спать по ночам <br>
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<footer>
+			<section class="footer-top">
+				<div class="container">
+					<a href="index.html" class="logo"><img src="../images/home/logo.png" alt="Logo"></a>
+					<p>пицца без регистрации и смс</p>
+				</div>
+			</section>
+
+			<div class="twitters">
+				<div class="container">
+					<span class="icon-twitter-1"></span><p>@super_verstaylshik Это просто улет! Я в полнейшем восторге!   Всем советую! </p>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="container">
+					<span class="icon-facebook"></span>
+					<span class="icon-twitter-3"></span>
+					<span class="icon-vimeo"></span>
+					<span class="icon-picasa"></span>
+
+					<p>Все права защищены <br> Сверстано с любовью Ярославом Каподастром</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
