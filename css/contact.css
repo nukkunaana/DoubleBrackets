@@ -1,3 +1,13 @@
+/*=====указываем правильный адрес к иконочным шрифтам=====*/
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../../fonts/glyphicons-halflings-regular.eot');
+  src: url('../../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+/*= / =*/
+
+/*======МЭЙН======*/
 .bg-grey{
 	padding-bottom: 100px;
 }
@@ -25,38 +35,34 @@ h2:after {
 	background-size: 10px 14px;
 	width: 100%;
 	position: absolute;
-z-index: 1;
+	z-index: 1;
 }
-
+/*=====СООБЩЕНИЕ | GPS=====*/
 .call-to-action {
 	margin-bottom: 50px;
 }
 
 .black-button {
-	padding: 29px 34px;
+	padding: 28.5px 33.5px;
 }
+/*=====/сообщение=====*/
 
+/*=====КАРТА=====*/
 #map_canvas {
 	height: 310px;
 }
+/*=====/карта=====*/
 
-
+/*=====ФОРМА=====*/
 .contact-form {
 	overflow: hidden;
 	margin-top: 43px;
 }
-
+/*----Ввод данных----*/
 .form,
 .address,
 .contact {
-	background-color: #fff;
 	float: left;
-}
-
-.form {
-	width: 74.5%;
-	margin-right: 2.5%;
-	padding: 20px 2% 30px;
 }
 
 .address,
@@ -73,16 +79,46 @@ h3 {
 	margin-bottom: 38px;
 }
 
-h4 {
-	border-bottom: 1px solid #e5e5e5;
-	padding-bottom: 17px;
-	margin-bottom: 17px;
-}
-
 h3,
 h4,
 .contact span {
 	color: #1aa156;
+}
+
+.form {
+	width: 74.5%;
+	margin-right: 2.5%;
+	padding: 20px 2% 30px;
+}
+
+.inner-addon {
+    position: relative;
+}
+
+.inner-addon input {
+    padding-left: 36px;    
+}
+
+.inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+    left: 0;
+    top: auto;
+	bottom: 27px;
+	color: #1aa156;
+}
+
+.inner-addon-textarea textarea {
+    padding: 8px 0 0 36px;    
+}
+
+.inner-addon-textarea i {
+	position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+    left: 0;
+    top: 1px;
 }
 
 input {
@@ -102,7 +138,9 @@ input:before {
 }
 
 input:hover,
-textarea:hover {
+textarea:hover,
+input:focus,
+textarea:focus {
 	border: 1px solid #1aa156;
 	outline: none;
 }
@@ -114,43 +152,24 @@ input[type="submit"]{
 	color: #fff;
 	border: none;
 }
+/*-- -/- --*/
+
+/*----Адрес----*/
+h4 {
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 17px;
+	margin-bottom: 17px;
+}
 
 .address p,
 .contact p {
 	font-size: 12px;
 }
+/*-- -/- --*/
 
+/*----Телефон----*/
 .contact p {
 	line-height: 21px;
 }
-
-.inner-addon {
-    position: relative;
-}
-.inner-addon input {
-    padding-left: 36px;    
-}
-.inner-addon i {
-    position: absolute;
-    padding: 10px 12px;
-    pointer-events: none;
-    left: 0;
-    top: auto;
-	bottom: 27px;
-	color: #1aa156;
-}
-
-
-
-.inner-addon-textarea textarea {
-    padding: 8px 0 0 36px;    
-}
-
-.inner-addon-textarea i {
-	position: absolute;
-    padding: 10px 12px;
-    pointer-events: none;
-    left: 0;
-    top: 1px;
-	/*bottom: 27px;*/
-}
+/*-- -/- --*/
+/*=====/форма=====*/

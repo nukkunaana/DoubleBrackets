@@ -1,6 +1,4 @@
 // http://bxslider.com/examples/carousel-demystified#example4
-
-
 $(document).ready(function(){
   $('.slider4').bxSlider({
     slideWidth: 300,

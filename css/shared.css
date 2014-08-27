@@ -1,104 +1,28 @@
-/*СТАНДАРТ*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	margin-bottom: 0; /*нейтрализация бутстрапа*/
+}
 .wrapper {
-	/*background-color: #eee;*/
-	/*background-color: #f8f8f8;*/
-/*	width: 1500px;*/
 	font-family: "Myriad Pro";
 }
 
 .container {
 	width: 1200px;
-	/*width: 100%;*/
 	text-align: center;
 	padding:0; /*нейтрализация буутстрапа*/
-}
-
-.column	{
-	float: left;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.row {
-	margin: 0 0;
+	overflow: hidden;
 }
 
 
-/* типа особо не нужный СТАНДАРТ*/
-.row:after, .clearfix:after {
-	content:"";
-	display: table;
-	clear: both;
-}
-
-.column:last-child {margin-right: 0;}
-.column:first-child {margin-left: 0;}
-
-.third {width: 33.3%;
-float: left;
-}
-
-.fourth {width: 25%;}
-
-.half {width: 50%;}
-
-.pull-left {display: inline-block; float: left;}
-
-.pull-right {display: inline-block; float: right;}
-/*конец СТАНДАРТОВ*/
-
-/* === ШРИФТЫ ===================================== */ 
-/*@font-face {
-    font-family: 'shlapak_scriptregular';
-    src: url('../fonts/shlapak_script-webfont.eot');
-    src: url('../fonts/shlapak_script-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/shlapak_script-webfont.woff') format('woff'),
-         url('../fonts/shlapak_script-webfont.ttf') format('truetype'),
-         url('../fonts/shlapak_script-webfont.svg#shlapak_scriptregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('../fonts/open_sans-webfont.eot');
-    src: url('../fonts/open_sans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/open_sans-webfont.woff') format('woff'),
-         url('../fonts/open_sans-webfont.ttf') format('truetype'),
-         url('../fonts/open_sans-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'sans_narrow';
-    src: url('../fonts/PT-Sans-Narrow.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;  
-}*/
-
-@font-face {
-    font-family: 'shlapak_scriptregular';
-    src: url('../fonts/bpmh7gx6-webfont.eot');
-    src: url('../fonts/bpmh7gx6-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/bpmh7gx6-webfont.woff') format('woff'),
-         url('../fonts/bpmh7gx6-webfont.ttf') format('truetype'),
-         url('../fonts/bpmh7gx6-webfont.svg#shlapak_scriptregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-/* ===================================== END === */ 
-
-
-/* === HEADER ===================================== */ 
+/* === ШАПКА === */ 
 
 .navigation {
 	background-color: #0f1521;
-	height: 109px;
 	width: 100%;
 	border-top: 5px solid #1aa156;
 }
@@ -106,7 +30,6 @@ float: left;
 .navigation:after {
 	content: "";
 	display: inline-block;
-	margin-top: 28px;
 	height: 10px;
 	background-image:
 	-webkit-linear-gradient(left top, #1aa156 49.9%, transparent 2%),
@@ -118,20 +41,14 @@ float: left;
 	z-index: 1;
 }
 
-nav {
-	position: relative;
-}
-
-header .logo:after {
+.triangle:after {
 	content: "";
 	background-image: url('../images/home/small_triangle.png');
 	position: absolute;
 	z-index: 2;
-	top: 76px;
-	left: 50%;
-	margin-left: -136px;
-	height: 50px;
-	width: 300px;
+	transform: translateX(197%);
+	height: 26px;
+	width: 273px;
 	background-repeat: no-repeat;
 }
 
@@ -139,6 +56,12 @@ header .logo:after {
 	color: #fff;
 	background-color: #1aa156;
 	text-decoration: none;
+}
+
+.wrapper a{
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .controls a:hover{
@@ -150,26 +73,28 @@ header .logo:after {
 }
 
 nav {
+	display: inline-block;
+	position: relative;
 	margin-top: 26px;
+	margin-bottom: 28px;
+	text-align: center;
+	width: 100%;
 }
 
 nav a {
-	/*font-family: 'PT Sans Narrow', sans-serif;*/
 	font-size: 16px;
 	color: #fff;
 	border: 1px solid  #1aa156;
 	padding: 13px 18px;
 	text-decoration: none;
-	float: left;
-	margin-right: 107px;
 }
 
-nav a:last-child {
+header ul li:last-child {
 	margin-right: 0;
 }
 
-nav a:first-child {
-	margin-left: 30px;
+header ul li:first-child {
+	margin-left: 0;
 }
 
 .logo {
@@ -177,19 +102,21 @@ nav a:first-child {
 	padding: 0;
 }
 
-/*"sans_narrow"*/
-/* ===================================== END === */ 
+header ul li {
+	display: inline-block;
+	margin: 0 4.95%;
+}
+/* === /шапка === */ 
 
 
 
 
-/* === FOOTER ===================================== */ 
+/* === ПОДВАЛ === */ 
 
 
 footer {
-		border-top: 5px solid #1aa156;
+	border-top: 5px solid #1aa156;
 }
-
 
 .footer-top {
 	background-color: #0f1521;
@@ -206,14 +133,13 @@ footer {
 	margin-top: 18px;
 }
 
-
 .twitters {
 	background-color: #1aa156;
 	color: #fff;
 	padding: 66px 0;
 }
 
-.twitters p{
+.twitters p {
 	width: 35%;
 	display: inline-block;
 	text-align: left;
@@ -227,7 +153,7 @@ footer {
 	font-size: 0;
 }
 
-.footer-bottom p{
+.footer-bottom p {
 	font-size: 14px;
 	margin-top: 47px;
 }
@@ -239,17 +165,10 @@ footer {
 	font-size: 30px;
 	padding: 10px;
 	background-color: #1aa156;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
-
-/*.footer-bottom span:first-child {
-	background-color: #0f1521;
-	color: #fff;
-}
-
-.footer-bottom span:first-child:hover {
-	background-color: #1d7243;
-	color: #fff;
-}*/
 
 .twitters span {
 	color: #0f1521;
@@ -272,18 +191,22 @@ footer {
 	z-index: 1;
 }
 
-
-
 .footer-bottom span:hover,
 .footer-bottom span:focus {
 	background-color: #0f1521;
 	color: #fff;
 }
+/* === /подвал === */ 
 
-/* ===================================== END === */ 
 
+/* === ОБЩИЕ СТИЛИ === */ 
 .bg-grey {
 	background-color: #f8f8f8;
+}
+
+.bg-white {
+	background-color: #fff;
+	border: 1px solid  #ececec;
 }
 
 .black-button {
@@ -302,7 +225,6 @@ footer {
 }
 
 .call-to-action {
-	background-color: #fff;
 	overflow: hidden;
 	font-size: 17px;
 }

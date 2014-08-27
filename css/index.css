@@ -1,10 +1,11 @@
+/*======МЭЙН======*/
 
-/*.slider {
-	margin-top: -23px;
-	background-image: url(../images/home/promo_img.jpg);
-	background-size: 100%;
-	height: 448px;
-}*/
+/*=====СЛАЙДЕР=====*/
+.wrapper .controls a:hover {
+	background-color: rgba(26, 161, 86, 0);
+	opacity: 1;
+	color: #1aa156;
+}
 
 .slider {
 	margin:0;
@@ -14,147 +15,6 @@
 .slider img {
 	width: 100%;
 }
-
-
-.prefs {
-	background-color: #0f1521;
-	color: #fff;
-	padding-top: 12px;
-}
-
-.prefs h2 {
-	/*font-family: 'PT Sans Narrow', sans-serif;*/
-	font-size: 25px;
-	margin-bottom: 52px;
-}
-
-.prefs img {
-	margin: 10px -1px 17px 0;
-}
-
-.prefs h3 {
-	font-size: 17px;
-}
-
-.prefs p {
-	font-size: 12px;
-	width: 77%;
-	margin: 18px auto;
-}
-
-.prefs a{
-	color: #fff;
-	border: 1px solid  #1aa156;
-	padding: 14px 14px;
-	font-size: 16px;
-	margin: 16px auto 0px;
-	display: inline-block;
-}
-
-.prefs .table-trics{
-	display: table;
-	padding-bottom: 50px;
-}
-
-/*.prefs .col-xs-4*/
-.prefs .table-trics-cell{
-	display: table-cell;
-	float: none;
-}
-
-.prefs .table-trics-cell:nth-child(2){
-	border-left: 1px solid  #151d2e;
-	border-right: 1px solid  #151d2e;
-}
-
-
-/*Отзывы*/
-
-.review {
-	padding: 52px 0 191px;
-}
-
-
-.customers {
-	color: #0F1521;
-	background-color: #1aa156;
-	margin-top: 50px;
-	padding: 30px;
-	font-size: 14px;
-	color: #fff;
-	position: relative;
-}
-
-
-blockquote {
-	border: none;
-	font-size: 14px;
-	width: 64%;
-	margin: auto;
-	margin-bottom: 20px;
-}
-
-.customers .carousel-inner .item img {
-	display: inline-block; /*нейтрализую буутстрап*/
-}
-/*нейтрализую буутстрап*/
-
-
-
-.slider .carousel-control.left,
-.slider .carousel-control.right {
-	background-image: none;
-	width: 6%;
-	height: 12%;
-	margin-right: 2%;
-	top:45%;
-	margin-top: -25px;
-	font-size: 50px;
-	color: #fff;
-	text-align: center;
-}
-
-.carousel-example-generic {
-	position: relative;
-}
-
-
-/*.review .carousel-control.left,
-.review .carousel-control.right {
-	background-image: none; 
-	width: 6%;
-	bottom: 13%;
-	position: absolute;
-	height: 40px;
-	top: auto;
-}
-*/
-
-
-.review .carousel-control.left,
-.review .carousel-control.right {
-	background-image: none; 
-	width: 6%;
-	bottom: 13%;
-	position: absolute;
-	height: 40px;
-	top: auto;
-	z-index: 5;
-}
-
-.customers .carousel-inner .item {
-	z-index: 4;
-}
-
-
-
-.wrapper .controls a:focus,
-.wrapper .controls a:hover {
-	background-color: rgba(26, 161, 86, 0);
-	opacity: 1;
-	color: #1aa156;
-}
-
 
 .color-txt {
 	position: absolute;
@@ -202,9 +62,165 @@ blockquote {
 	background-color: #0F1521;
 }
 
+/*нейтрализую буутстрап*/
+.slider .carousel-control.left,
+.slider .carousel-control.right {
+	background-image: none;
+	width: 6%;
+	height: 12%;
+	margin-right: 2%;
+	top:45%;
+	margin-top: -25px;
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+}
 
 
-/*== Нейтрализация слайдера ==*/
+/*=====/слайдер=====*/
+
+/*=====ПРЕИМУЩЕСТВА=====*/
+.prefs {
+	background-color: #0f1521;
+	color: #fff;
+	padding-top: 12px;
+}
+
+.prefs h2 {
+	font-size: 25px;
+	margin-bottom: 52px;
+}
+
+.prefs img {
+	margin: 10px -1px 17px 0;
+}
+
+.prefs h3 {
+	font-size: 17px;
+}
+
+.prefs p {
+	font-size: 12px;
+	width: 77%;
+	margin: 18px auto;
+}
+
+.prefs a{
+	color: #fff;
+	border: 1px solid  #1aa156;
+	padding: 14px 14px;
+	font-size: 16px;
+	margin: 16px auto 0px;
+	display: inline-block;
+}
+
+.prefs .table-trics{
+	display: table;
+	padding-bottom: 50px;
+}
+
+.prefs .table-trics-cell{
+	display: table-cell;
+	float: none;
+}
+
+.prefs .table-trics-cell:nth-child(2){
+	border-left: 1px solid  #151d2e;
+	border-right: 1px solid  #151d2e;
+}
+/*=====/преимущества=====*/
+
+/*=====ОТЗЫВ=====*/
+.review {
+	padding: 52px 0 191px;
+}
+
+.customers {
+	color: #0F1521;
+	background-color: #1aa156;
+	margin-top: 50px;
+	padding: 30px;
+	font-size: 14px;
+	color: #fff;
+	position: relative;
+}
+
+blockquote {
+	border: none;
+	font-size: 14px;
+	width: 64%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+/*слайдер отзыва*/
+.customers:after {
+	content: "";
+	display: inline-block;
+	margin-top: 28px;
+	height: 150px;
+	background-color: #0F1521;
+	background-image: -webkit-linear-gradient(left top, #1AA156 49.9%, rgba(0, 0, 0, 0) 2%), -webkit-linear-gradient(right top, #1AA156 49.9%, rgba(0, 0, 0, 0) 5%);
+	-webkit-background-size: 10px 10px;
+	background-size: 10px 10px;
+	background-repeat: repeat-x;
+ 	width: 100%;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	bottom: 0;
+}
+
+.customers .controls .carousel-control i {
+	font-size: 27px;
+	margin-left: -20px;
+	color: #1aa156;
+}
+
+.customers img {
+	margin-bottom: 20px;
+}
+
+.customers .item span{
+	color: #1aa156;
+} 
+
+.customers .carousel-control.left,
+.customers .carousel-control.right {
+	background-image: none; 
+	width: 6%;
+	bottom: 13%;
+	height: 40px;
+	top: auto;
+	z-index: 5;
+}
+
+.customers .carousel-inner .item {
+	z-index: 4;
+}
+
+.customers .carousel-inner .item img {
+	display: inline-block; /*нейтрализую буутстрап*/
+}
+/*-/слайдер отзыва-*/
+
+/*лого постоянных клиентов*/
+.regulars {
+	height: 250px;
+	margin: 52px 0 0;
+}
+
+.regulars h3 {
+	font-size: 17px;
+	color: #1aa156;
+	float: left;
+	margin-top: 42px;
+	margin-left: 35px;
+	margin-bottom: 41px;
+}
+
+
+/*== Нейтрализация/стилизация карусели с логотипами ==*/
 .bx-wrapper .bx-pager {
 	display: none;
 }
@@ -253,60 +269,10 @@ blockquote {
 	background: url(../images/home/next.png) no-repeat #1AA156 center!important;
 	background-color: #1aa156;
 }
-
 /*====*/
+/*=====/отзыв=====*/
 
 
 
 
 
-.regulars {
-	height: 250px;
-	background-color: #fff;
-	margin: 52px 0 0;
-}
-
-.regulars h3 {
-	font-size: 17px;
-	color: #1aa156;
-	float: left;
-	margin-top: 42px;
-	margin-left: 35px;
-	margin-bottom: 41px;
-}
-
-
-
-
-/*Втторой слайдер*/
-.customers:after {
-	content: "";
-	display: inline-block;
-	margin-top: 28px;
-	height: 150px;
-	background-color: #0F1521;
-	background-image: -webkit-linear-gradient(left top, #1AA156 49.9%, rgba(0, 0, 0, 0) 2%), -webkit-linear-gradient(right top, #1AA156 49.9%, rgba(0, 0, 0, 0) 5%);
-	-webkit-background-size: 10px 10px;
-	background-size: 10px 10px;
-	background-repeat: repeat-x;
- 	width: 100%;
-	position: absolute;
-	z-index: 1;
-	left: 0;
-	bottom: 0;
-}
-
-
-.customers .controls .carousel-control i{
-	font-size: 27px;
-	margin-left: -20px;
-	color: #1aa156;
-}
-
-.customers img {
-	margin-bottom: 20px;
-}
-
-.customers .item span{
-	color: #1aa156;
-} 

@@ -1,12 +1,18 @@
+/*======МЭЙН=======*/
 .main {
 	padding: 67px 0 40px;
 }
 
-.green-button {
+/*=====СООБЩЕНИЕ | СОБРАТЬ ПИЦЦУ=====*/
+.compose-green-button {
 	padding-top: 29px;
 	line-height: 20px;
 }
+/*======/сообщение======*/
 
+
+/*======МЕНЮ======*/
+/*----навигация по меню----*/
 .menu {
 	margin-top: 52px;
 }
@@ -31,18 +37,20 @@
 	text-align: center;
 	width: 100%;
 	padding-bottom: 15.7px;
+	float: left;
 }
 
 .menu nav a:last-child {
 	margin-bottom: 48px;
 }
+/*-- -/- --*/
 
+/*----таблица меню----*/
 table {
 	width: 77%;
 	background-color: #f1f1f1;
 }
 
-/*table tr:first-child*/
 .conditions{
 	height: 60px;
 	background-color: #fff;
@@ -97,11 +105,6 @@ td h4,
 	transform: translateY(-46%);
 }
 
-/*.wrapper .menu_button:hover,
-.js-text:hover {
-	background-color: #0F1521;	
-}*/
-
 .menu_button.active {
   background-color: #1aa156;
 }
@@ -122,8 +125,6 @@ td h4,
   display: inline;
 }
 
-
-
 /*специяально для js*/
 .chose {
 	color: #FFF;
@@ -142,3 +143,4 @@ td h4,
 .default_cursor a{
 	cursor: default;
 }
+/*-- -/- --*/
