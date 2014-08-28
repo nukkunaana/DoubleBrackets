@@ -1,6 +1,6 @@
 $(function() {
-
-	// как заргузить гугл карты на сайт:
+  // Вызывает карту.
+	// Инструкция как заргузить гугл карты на сайт:
 	// https://developers.google.com/maps/documentation/javascript/tutorial?hl=ru#HelloWorld
 	
 

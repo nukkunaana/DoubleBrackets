@@ -1,11 +1,12 @@
 $(function() {
+  // Валидация форм, в поле "Имя", "Е-мейл", "Комментарий" 
   $(".error").hide();
 
   // при изменении содержания input, в форме обратной связи, запускает валидацию
   $(".name_container input").change(validate.controls.name);
   $(".email_container input").change(validate.controls.email);
   $(".comment_container input").change(validate.controls.comment);
-  // при клике на кнопку "Send" если все верно заполнено, то имитирует отправку форм.
+  // при клике на кнопку "Отправить" если все верно заполнено, то имитирует отправку форм.
   $("#addPersonButton").click(function(event){
     event.preventDefault();
     if(validate.all()){
@@ -32,7 +33,7 @@ var validate = (function(){
   };
 
   // объект выпоняющий валидацию всех input
-  // вызывается при клике на кнопку "Send"
+  // вызывается при клике на кнопку "Отправить"
   var all = function(){
     var invalidControls = [];
     // Запускает каждый метод валидации
@@ -80,7 +81,7 @@ var validate = (function(){
       return isValid;
     },
 
-    // Метод валидирующий имейл
+    // Метод валидирующий Е-мейл
     email: function(){
       var $input = $(this);
       var isValid = true;

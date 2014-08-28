@@ -278,6 +278,7 @@ footer {
 	color: #000;
 	outline: none;
 	height: 23px;
+	margin-top: 0;
 }
 
 .call-to-action .call-to-action_txt input::-webkit-input-placeholder { color: #0F1521; }
