@@ -75,8 +75,8 @@ h2:after {
 
 h3 {
 	font-size: 21px;
-	float: left;
-	margin-bottom: 38px;
+	text-align: left;
+	margin-bottom: 17px;
 }
 
 h3,
@@ -93,6 +93,8 @@ h4,
 
 .inner-addon {
     position: relative;
+    text-align: left;
+    overflow: hidden;
 }
 
 .inner-addon input {
@@ -100,17 +102,19 @@ h4,
 }
 
 .inner-addon i {
-    position: absolute;
-    padding: 10px 12px;
-    pointer-events: none;
-    left: 0;
-    top: auto;
-	bottom: 27px;
-	color: #1aa156;
+	position: absolute;
+	/* position: relative; */
+	padding: 10px 13px;
+	pointer-events: none;
+	left: 0;
+	top: 24px;
+	/* bottom: 27px; */
+	color: #1AA156;
+	font-size: 17px;
 }
 
 .inner-addon-textarea textarea {
-    padding: 8px 0 0 36px;    
+    padding: 15px 0 0 36px;    
 }
 
 .inner-addon-textarea i {
@@ -118,19 +122,19 @@ h4,
     padding: 10px 12px;
     pointer-events: none;
     left: 0;
-    top: 1px;
+    top: 25px;
 }
 
 input {
 	width: 100%;
 	height: 51px;
-	margin-bottom: 2.4%;
+	margin-top: 18px;
 }
 
 textarea {
 	width: 100%;
 	height: 150px;
-	margin-bottom: 2%;
+	margin-top: 18px;
 }
 
 input:before {
@@ -155,7 +159,7 @@ input[type="submit"]{
 /*-- -/- --*/
 
 /*----Адрес----*/
-h4 {
+.contact-form h4 {
 	border-bottom: 1px solid #e5e5e5;
 	padding-bottom: 17px;
 	margin-bottom: 17px;
@@ -173,3 +177,10 @@ h4 {
 }
 /*-- -/- --*/
 /*=====/форма=====*/
+
+.error {
+	display: inline-block;
+	margin: 6px 0 0px 38px;
+	color: #F00;
+	border-radius: 6px;
+}

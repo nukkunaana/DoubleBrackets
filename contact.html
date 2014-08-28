@@ -12,12 +12,13 @@
 	<link rel="stylesheet" href="css/contact.css">
 
 	<script src="js/vendor/jquery-2.1.0.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script> 
+	<script src="js/vendor/bootstrap.min.js"></script>
 
 	<script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCqMgbryxrbeQY1zH46XTNl9ZLrp2budOg&sensor=FALSE">
     </script>
 	<script src="js/map.js"></script>
+	<script src="js/form-error.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -39,7 +40,7 @@
 										<a href="index.html" class="logo"><img src="images/home/logo.png" alt="Logo"></a>
 									</li>
 									<li>
-										<a href="#">Акции</a>
+										<a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Акции</a>
 									</li>
 									<li>
 										<a href="contact.html">Контакты</a>
@@ -52,6 +53,23 @@
 			</div>
 		</header>
 		<!-- =================/шапка================= -->
+
+		<!-- =================МОДАЛЬНОЕ ОКНО================= -->
+		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+		    	<div class="modal-content">
+		    		<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Акция</h4>
+				    </div>
+				    <div class="modal-body">
+		    			— эмиссионная ценная бумага, закрепляющая права её владельца (акционера) на получение части прибыли акционерного общества в виде дивидендов, на участие в управлении акционерным обществом и на часть имущества, остающегося после его ликвидации. Согласно российскому законодательству, акция является именной ценной бумагой.(Wikipedia)
+		    		</div>
+		    	</div>
+			</div>
+		</div>
+		<!-- =================/модальное окно================= -->
+
 		<!-- =================МЭЙН================= -->
 		<div class="main bg-grey">
 			<h2>Есть вопросы? Напиши нам!</h2>
@@ -77,25 +95,32 @@
 						<!-- -___________-Ввод данных-___________- -->
 						<section class="form bg-white">
 							<h3>CONTACT FORM</h3>
-							<div class="inner-addon">
+
+							<div class="inner-addon name_container">
 								<i class="glyphicon glyphicon-user"></i>
-								<input type="text" placeholder="Имя">
+								<input id="name" type="text" placeholder="Имя">
+								<span class="error"></span>
 							</div>
-							<div class="inner-addon">
+
+							<div class="inner-addon email_container">
 								<i class="glyphicon glyphicon-envelope"></i>
-								<input type="text" placeholder="Электропочта">
+								<input id="email" type="email" placeholder="Электропочта">
+								<span class="error"></span>
 							</div>
+
 							<div class="inner-addon" >
 								<i class="glyphicon glyphicon-earphone"></i>
 								<input type="text" placeholder="Лэ телефоне">
+								<span class="error"></span>
 							</div>
 							
-							<div class="inner-addon inner-addon-textarea" >
+							<div class="inner-addon inner-addon-textarea comment_container" >
 								<i class="glyphicon glyphicon-comment"></i>
-								<textarea name="" id="" cols="30" rows="10" placeholder="Масседж"></textarea>
+								<textarea name="comment" id="comment" type="text" cols="30" rows="10" placeholder="Масседж"></textarea>
+								<span class="error"></span>
 							</div>
 							
-							<input type="submit" value="Отправить" size="20">
+							<input id="addPersonButton" type="submit" value="Отправить" size="20">
 						</section>
 						<!-- -/- -->
 						<!-- -___________-Адрес-___________- -->

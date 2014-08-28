@@ -112,6 +112,25 @@ header ul li {
 
 
 
+/* === Мод. ОКНО === */
+.modal-title {
+	font-family: 'Myriad Pro';
+	color: #1aa156;
+}
+
+.modal-header {
+	background-color: #0F1521;
+	border-radius: 4px 4px 0 0;
+}
+
+.modal-header .close {
+	color: #ccc;
+}
+/* === /мод.окно === */
+
+
+
+
 /* === ПОДВАЛ === */ 
 
 
