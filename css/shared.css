@@ -46,7 +46,8 @@ ul{
 	background-image: url('../images/home/small_triangle.png');
 	position: absolute;
 	z-index: 2;
-	transform: translateX(197%);
+	left: 50%;
+	margin-left: -136px;
 	height: 26px;
 	width: 273px;
 	background-repeat: no-repeat;

@@ -1,3 +1,4 @@
+// Включаем карусель с лого постоянных клиентов
 // http://bxslider.com/examples/carousel-demystified#example4
 $(document).ready(function(){
   $('.slider4').bxSlider({
